@@ -1,0 +1,14 @@
+[project]
+name = "tcp-proxy"
+version = "0.1.0"
+description = "TCP proxy to map ingress requests to internal sandboxes"
+readme = "README.md"
+authors = [
+    { name = "Pasha Kononov", email = "kononoffp@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["uv_build>=0.9.5,<0.10.0"]
+build-backend = "uv_build"
