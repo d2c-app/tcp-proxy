@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tcp-proxy
+  labels:
+    app: tcp-proxy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tcp-proxy
+  template:
+    metadata:
+      labels:
+        app: tcp-proxy
+    spec:
+      containers:
+      - name: tcp-proxy
+        image: tcp-proxy:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 5432
+          name: postgres
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
