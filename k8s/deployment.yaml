@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
       - name: tcp-proxy
-        image: tcp-proxy:latest
-        imagePullPolicy: IfNotPresent
+        image: us-central1-docker.pkg.dev/imgstorage-1/d2c-images/tcp-proxy:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 5432
           name: postgres

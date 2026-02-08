@@ -2,7 +2,7 @@
 
 # Build Docker image
 build:
-	docker build -f docker/Dockerfile -t tcp-proxy:latest .
+	docker build -t tcp-proxy:latest .
 
 # Load image into kind cluster
 load: build
