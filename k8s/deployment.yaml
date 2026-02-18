@@ -21,6 +21,8 @@ spec:
         ports:
         - containerPort: 5432
           name: postgres
+        - containerPort: 6379
+          name: redis
         resources:
           limits:
             memory: "128Mi"
