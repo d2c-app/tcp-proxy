@@ -2,7 +2,7 @@
 
 # Build Docker image
 build:
-	docker build --platform linux/amd64 -t us-central1-docker.pkg.dev/imgstorage-1/d2c-images/tcp-proxy:latest .
+	docker build --platform linux/amd64 -t us-east1-docker.pkg.dev/imgstorage-1/d2c-images/tcp-proxy:latest .
 
 # Load image into kind cluster
 load: build

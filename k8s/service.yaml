@@ -6,7 +6,7 @@ metadata:
     app: tcp-proxy
 spec:
   type: LoadBalancer
-  loadBalancerIP: 136.114.131.74
+  loadBalancerIP: 35.237.115.201
   ports:
   - port: 5432
     targetPort: 5432

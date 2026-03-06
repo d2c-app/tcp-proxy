@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: tcp-proxy
-        image: us-central1-docker.pkg.dev/imgstorage-1/d2c-images/tcp-proxy:latest
+        image: us-east1-docker.pkg.dev/imgstorage-1/d2c-images/tcp-proxy:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 5432
